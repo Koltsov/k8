@@ -1,0 +1,38 @@
+.modal.reservation_modal#new_reservation_modal role="dialog" tabindex="-1"
+  .modal-dialog role="document"
+    .modal-content
+      form
+        .modal-header
+          h5.modal-title Новое бронирование
+          button.close aria-label="Закрыть" data-dismiss="modal" type="button"
+            span aria-hidden="true"  &times;
+        .modal-body
+          .form-group.row
+            .col-lg-2
+              label На имя
+            .col-lg-10
+              input.form-control type="text" name="client_name"
+          .form-group.row
+            .col-lg-2
+              label Телефон
+            .col-lg-10
+              input.form-control type="text" name="phone"
+          .form-group.row
+            .col-lg-2
+              label Номер карты
+            .col-lg-10
+              input.form-control type="text" name="card"
+          .form-group.row
+            .col-lg-2
+              label Кол-во человек
+            .col-lg-10
+              input.form-control type="number" name="people"
+          .form-group.row
+            .col-lg-2
+              label Комментарий
+            .col-lg-10
+              textarea.form-control name="comment"
+
+        .modal-footer
+          button.btn.btn-primary type="button"  Добавить
+          button.btn.btn-secondary data-dismiss="modal" type="button"  Отмена
